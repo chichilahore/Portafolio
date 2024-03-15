@@ -4,62 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        display: flex;
-        justify-content: space-between;
-      }
-      .about {
-        
-      }
-      
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-      <section>
-         <img alt="taurus zodiac sign"/>
-         <p>Alexandr Chichizola</p> 
-      </section>
-      <nav>
-        <ul>
-          <li>About me</li>
-          <li>Proyects</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
-    <div class="menu>
-      <p>Hi, I’m Alexandr</p>
-      <p>Web and UX developer</p>
-    </div>
-    <div class="about"></div>
-     <section>
-       <p>Hi, I’m Alexandr Chichizola, web developer based on Barcelona. I like to transform ideas and create spaces through the digital world.</p>
-     </section>
-     <img alt="alexandr pic" />
-    <div class="project-cards">
-      <a> class="card-1">
-        <p class="card-description>Isa Enes website</p>  
+<body>   
+  <header>
+    <nav>
+      <div class="brand-container">
+        <a > <img src="tauruslogo.png"  alt="taurus zodiac sign"/></a>
+        <p class="brand-name">Alexandr Chichizola</p></li> 
+      </div>
+      <ul>
+        <li ><a href="#ancla-1">About me</a></li>
+        <li ><a href="#ancla-2">Projects</a></li>
+        <li ><a href="#ancla-3">Contact</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div>
+        <video autoplay loop muted >
+          <source src="ani-isa.mp4" type="video/mp4">
+         Tu navegador no soporta el elemento de video.
+        </video>
+      </div>
+      <div class="presentation-description">
+      <p class="presentation">Hi, I’m Alexandr</p>
+      <p class="description">Web and UX developer</p>
+      </div>
+      <a href="#ancla-1"><img class="arrow" src="Arrow.png" alt="arrow to slide" /></a>
+    </section>
+  </header>
+  <main >
+    <div class="about" >   
+      <a class="about-title" name="ancla-1" >About me</a>
+      <div class="about-content">
+        <div class="about-description">Hi, I’m Alexandr Chichizola, web developer based on Barcelona. I like to transform ideas and create spaces through the digital world.</div>
+        <img class="about-pic" src="capturafoto.png"  alt="alexandr pic" />
+      </div>
+    </div>    
+    <div class="projects" >
+      <a class="projects-title" name="ancla-2">Projects</a>
+      <div class="projects-content">
+        <article class="card-1">
+          <p class="card-description">Isa Enes </p>  
+        </article>
+        <article class="card-2">
+          <p class="card-description">Nasiri Music</p>  
+        </article>
+        <article class="card-3">
+          <p class="card-description">Rabbito</p>  
+        </article> 
+      </div>   
+    </div> 
+  </main>    
+  <footer>
+    <div class="contact-icons" >
+      <a name="ancla-3">
+        <img src="mailicon.png"  alt="mail-icon"/>
       </a>
-      <a> class="card-2">
-        <p class="card-description>Nasiri Music</p>  
+      <a>
+        <img src="instaicon.png"  alt="insta-icon"/>
       </a>
-      <a> class="card-3">
-        <p class="card-description>Rabbito Schedule app</p>  
-      </a>    
+      <a>
+        <img  src="linkedinicon.png"  alt="linkedin-icon"/>
+      </a>
     </div>      
-    <footer>
-        <a>
-          <img alt="mail-icon"/>
-        </a>
-        <a>
-          <img alt="instagram-icon"/>
-        </a>      
-    </footer>
+  </footer>
 </body>
 </html>
