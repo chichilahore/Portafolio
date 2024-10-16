@@ -1,0 +1,54 @@
+footer {
+    background-color: var(--footer-background-color);
+    display: flex;
+    align-items: center;
+    width: calc(100% - var(--body-margin) * 2);
+    height: 30vh;
+    padding: 0 var(--body-margin);
+    color: white;
+}
+
+footer > * {
+    margin-inline-end: 2em;
+}
+
+.contact-links{
+    padding: 0;
+    width: 10vw;
+    margin: none;    
+}
+
+.contact-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    padding: 0.5em;
+}
+
+.contact-icons img:hover {
+    transform: scale(1.2);
+}
+
+footer input.input-contact {
+    font-size: 1.25rem;
+    margin: 0 1em;
+    padding: .5em;
+    background: transparent;
+    color: black;
+    border: 0;
+    border-block-end: 2px solid white;
+}
+
+footer input::placeholder{
+    color: rgba(255, 255, 255, 0.798);
+}
+
+footer input:focus{
+    color: rgba(255, 255, 255, 0.798);
+}
+
+button{
+    width: 5vw;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+}

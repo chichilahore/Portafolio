@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=League+Gothic&display=swap');
+
+:root {
+    --first-font-color: #E8A2EC;
+    --second-font-color: #FFFFFF;
+    --main-background-color: rgba(0, 0, 0, 0.5);
+    --trans-background-color: rgba(0, 0, 0, 0.3);
+    --about-background-color: #2a2a2a;
+    --projects-background-color: #121212;
+    --footer-background-color: var(--main-background-color);
+    --first-color-article: #ff00ff;
+    --second-color-article: #9B86BF;
+    --third-color-article: #8796DD;
+    --body-margin: 10%;
+    --blur: blur(1.75em);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Istok Web", sans-serif;
+    letter-spacing: -.033em;
+    font-weight: 700;
+    font-style: normal;
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+    letter-spacing: -.033em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8vh;
+    color: var(--first-font-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main,
+.header-banner {
+    width: calc(100% - var(--body-margin) * 2);
+    margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.about-description, .card-description, .nav ul li a {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about, .projects {
+    margin-block-end: 4em;
+    border-radius: 2em;
+    padding: 6em 4em;
+}
+
+.about, .projects, footer {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+nav, .about, .projects, footer, .presentation-description p {
+    background: linear-gradient(45deg, 
+        rgba(0, 0, 0, .09) -2.6%,
+        rgba(255, 255, 255, .09) 32.9%,
+        rgba(0, 0, 0, .09) 52.7%,
+        rgba(255, 255, 255, .09) 72.8%,
+        rgba(0, 0, 0, .09) 81.1%,
+        rgba(255, 255, 255, .09) 102.4%);
+    backdrop-filter: var(--blur);
+}
+
+.about.visible, .projects.visible, footer.visible {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    .presentation-description {
+        width: 80%;
+        font-size: 5vw;
+    }
+
+    .projects-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-description {
+        font-size: 4vw;
+    }
+
+    .about-pic {
+        width: 50%;
+        height: auto;
+    }
 }

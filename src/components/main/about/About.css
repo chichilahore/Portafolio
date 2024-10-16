@@ -1,0 +1,33 @@
+.about {
+    background-color: var(--trans-background-color);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+/* .about-title {
+    font-size: 6vw;
+    color: var(--first-font-color);
+    transition: transform 0.3s ease;
+    margin: 0.5em;
+} */
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-description {
+    width: 66%;
+    font-size: 2vw;
+    color: var(--second-font-color);
+
+}
+
+.about-pic {
+    width: 30%;
+}
+

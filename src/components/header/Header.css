@@ -1,0 +1,126 @@
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 7vw;
+}
+
+.arrow-link {
+    border-radius: 50%;
+    backdrop-filter: blur(1em);
+    display: flex;
+    width: 1em;
+    height: 1em;
+    margin-block-start: 2vh;
+    background: var(--trans-background-color);
+}
+
+.arrow {
+    margin: 0 auto;
+    display: block;
+    place-self: center;
+    margin-block-start: .05em;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: hue-rotate(115deg);
+    animation: colors 10s ease;
+    animation-iteration-count: infinite ;
+}
+
+@keyframes colors {
+    0% {
+        filter: hue-rotate(115deg);
+    }
+
+    100% {
+        filter: hue-rotate(475deg);
+
+    }
+}
+
+.presentation-description {
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    padding: 2rem 0;
+}
+
+.presentation-description p {
+    margin: 1rem 0;
+    padding: 0 2rem;
+    display: inline-block;
+    backdrop-filter: blur(1rem);
+    border-radius: .25em;
+    mix-blend-mode: overlay;
+    background-color: var(--trans-background-color);
+}
+
+.presentation {
+    color: var(--second-font-color);
+    animation: focusText 3s ease forwards;
+    opacity: 0;
+}
+
+.description {
+    color: var(--first-font-color);
+    animation: focusText 2.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes focusText {
+    0% {
+        filter: blur(2em);
+        opacity: 0;
+        transform: scale(2);
+    }
+
+    50% {
+        filter: blur(5px);
+        opacity: 0.5;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}
+
+@media (max-width: 768px) {
+    .presentation-description {
+        width: 50%;
+        height: 15vh;
+    }
+
+    .presentation {
+        font-size: 3vh;
+        animation: focusText 2.5s ease forwards;
+        /* Ajuste de duración para móviles */
+    }
+
+    .description {
+        font-size: 2.5vh;
+        animation: focusText 3s ease forwards;
+        /* Ajuste de duración para móviles */
+    }
+}
