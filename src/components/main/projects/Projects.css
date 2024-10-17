@@ -16,9 +16,11 @@
 .projects-content {
     display: flex;
     width: auto;
-    height: 250vh;
+    height: 220vh;
     margin-top: 2rem;
     flex-wrap: wrap;
+    align-items: space-around;
+    justify-content: space-around;
 }
 
 .projects-content article {
@@ -34,26 +36,16 @@
     color: var(--first-font-color);
 }
 
-.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8{
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8, .card-9{
     border-radius: 10%;
-    padding: 0em;
+    border: 0.1px solid var(--first-font-color);
+    margin: 1em;
 }
 
 .card-1 :hover, .card-2 :hover, .card-3 :hover, .card-4 :hover, .card-5 :hover, .card-6 :hover, .card-7 :hover, .card-8 :hover{
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
-/* .card-1,.card-4, .card-7 {
-    background-color: var(--first-color-article);
-}
-
-.card-2, .card-5, .card-8{
-    background-color: var(--second-color-article);
-}
-
-.card-3, .card-6 {
-    background-color: var(--third-color-article);
-} */
 a{
     text-decoration-color: var(--first-font-color);
 }
@@ -70,19 +62,23 @@ h3 {
     transform: scale(0.5);
 }
 
-.imgDesktop{
-    width: 25vw;
-    height: 35vh;
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    padding-inline-start: 1em;
+    padding-block: 1em;
+}
+
+.img-desktop{
+    width: 20vw;
+    height: 25vh;
     margin-inline-end: 2em;
 }
 
-.imgMobile{
-    width: 6vw;
-    height: 30vh;
+.img-mobile{
+    width: 7.5vw;
+    height: 25vh;
     margin-inline-end: 2em;
 
-}
-
-.card-8{
-    margin-left: 1em;
 }
