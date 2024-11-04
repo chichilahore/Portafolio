@@ -3,19 +3,19 @@ footer {
     display: flex;
     align-items: center;
     width: calc(100% - var(--body-margin) * 2);
-    height: 30vh;
+    min-height: 30vh;
     padding: 0 var(--body-margin);
     color: white;
 }
 
-footer > * {
+footer>* {
     margin-inline-end: 2em;
 }
 
-.contact-links{
+.contact-links {
     padding: 0;
     width: 10vw;
-    margin: none;    
+    margin: none;
 }
 
 .contact-icons img {
@@ -30,8 +30,9 @@ footer > * {
 }
 
 footer input.input-contact {
+    width: calc(100% - var(--body-margin) * 2);
     font-size: 1.25rem;
-    margin: 0 1em;
+    margin-inline-end: 1em;
     padding: .5em;
     background: transparent;
     color: black;
@@ -39,16 +40,49 @@ footer input.input-contact {
     border-block-end: 2px solid white;
 }
 
-footer input::placeholder{
+footer input::placeholder {
     color: rgba(255, 255, 255, 0.798);
 }
 
-footer input:focus{
+footer input:focus {
     color: rgba(255, 255, 255, 0.798);
 }
 
-button{
-    width: 5vw;
+button {
     font-size: 1.2em;
+    padding: 0.5em 1em;
     border-radius: 0.5em;
+}
+
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: start;
+        padding-block: var(--body-margin);
+    }
+
+    footer > * {
+        margin-inline-end: 0;
+        margin-block-end: 1rem;
+    }
+
+    .contact-links {
+        width: 100%;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .contact-form .input-button {
+        margin-block: 1rem;
+    }
+
+    .contact-form .input-button button {
+        margin-block: 2rem;
+    }
 }

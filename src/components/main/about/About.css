@@ -22,12 +22,43 @@
 
 .about-description {
     width: 66%;
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: var(--second-font-color);
 
 }
 
 .about-pic {
     width: 30%;
+}
+
+@media (max-width: 768px) {
+    .about{
+        padding: 2em;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .about div{
+        display: flex;
+        justify-content: start;
+    }
+
+    .about-content{
+        flex-direction: column-reverse;
+        gap: 1em;
+    }
+
+    .about-pic {
+        width: 100%;
+    }
+    
+    .about-description{
+        font-size: 1.2em;
+    }
+
+    .about-description {
+        width: 100%;
+    }
+    
 }
 

@@ -20,13 +20,18 @@ section {
     height: 1em;
     margin-block-start: 2vh;
     background: var(--trans-background-color);
+    position: absolute;
+    top: 80vh;
+    mix-blend-mode: overlay;
 }
 
 .arrow {
+    width: calc(100% - .3em);
     margin: 0 auto;
     display: block;
     place-self: center;
     margin-block-start: .05em;
+    filter: saturate(0) brightness(5);
 }
 
 video {
@@ -72,6 +77,8 @@ video {
     border-radius: .25em;
     mix-blend-mode: overlay;
     background-color: var(--trans-background-color);
+    line-height: 1.01em;
+    padding: .25em .275em;
 }
 
 .presentation {
@@ -107,20 +114,39 @@ video {
 }
 
 @media (max-width: 768px) {
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .header-banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .presentation-description {
-        width: 50%;
-        height: 15vh;
+        /* width: 50%;
+        height: 15vh; */
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .presentation {
-        font-size: 3vh;
+        font-size: 3rem;
         animation: focusText 2.5s ease forwards;
-        /* Ajuste de duración para móviles */
     }
 
     .description {
-        font-size: 2.5vh;
+        font-size: 3rem;
         animation: focusText 3s ease forwards;
-        /* Ajuste de duración para móviles */
     }
 }

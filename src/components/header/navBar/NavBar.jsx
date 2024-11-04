@@ -1,5 +1,4 @@
 import './NavBar.css';
-import TaurusLogo from '../../../assets/tauruslogo.png'
 
 export default function NavBar() {
     return (

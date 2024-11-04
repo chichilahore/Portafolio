@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=League+Gothic&display=swap');
 
 :root {
-    --first-font-color: #E8A2EC;
+    --first-font-color: rgba(255,255,255, .8);
     --second-font-color: #FFFFFF;
     --main-background-color: rgba(0, 0, 0, 0.5);
     --trans-background-color: rgba(0, 0, 0, 0.3);
     --about-background-color: #2a2a2a;
     --projects-background-color: #121212;
     --footer-background-color: var(--main-background-color);
-    --first-color-article: #ff00ff;
-    --second-color-article: #9B86BF;
-    --third-color-article: #8796DD;
-    --body-margin: 10%;
+    --first-color-article: rgba(255,255,255, .8);
+    --second-color-article: rgba(0,0,0, .8);
+    --third-color-article: rgba(255,255,255, .5);
+    --body-margin: calc(12% - 4rem);
     --blur: blur(1.75em);
 }
 
@@ -77,6 +77,14 @@ nav, .about, .projects, footer, .presentation-description p {
 }
 
 @media (max-width: 768px) {
+    :root {
+        --body-margin: 2rem;
+    }
+
+    .about, .projects {
+        padding: 2em;
+    }
+    
     .presentation-description {
         width: 80%;
         font-size: 5vw;
@@ -91,8 +99,5 @@ nav, .about, .projects, footer, .presentation-description p {
         font-size: 4vw;
     }
 
-    .about-pic {
-        width: 50%;
-        height: auto;
-    }
+
 }
