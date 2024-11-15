@@ -1,5 +1,5 @@
 import './About.css';
-import AboutMePitcure from '../../../assets/capturafoto.png';
+import AboutMePitcure from '../../../assets/AboutPic.png';
 
 
 export default function About() {

@@ -20,10 +20,8 @@ nav {
     font-size: 1.5rem;
     color: var(--first-font-color);
     text-decoration: none;
-    padding: 1em;
     display: flex;  
     justify-content: center;
-    text-align: center;
     width: 100%;
 
 }
@@ -55,6 +53,14 @@ nav ul li:hover {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--first-font-color);
+}
 
 @media (max-width: 768px) {
     .brand-container{
@@ -66,20 +72,53 @@ nav ul li:hover {
     }
 
     nav ul {
-        display: flex;
         flex-direction: column;
         width: 47%;
         justify-content: space-around;
         font-size: 4vh;
         text-align: center;
+        position: fixed;
+        background: black;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        display: none;
     }
+
+    nav.show-menu {
+        align-items: flex-start;
+        height: 100vh;
+    }
+
+    nav.show-menu + header,
+    nav.show-menu + header + main,
+    nav.show-menu + header + main + footer {
+        display: none;
+    }
+
+    .show-menu ul {
+        display: flex;
+    }.presentation-description
 
     nav ul li {
         margin: 10px 0;
     }
 
     nav ul li a{
-        font-size: 2vh;
+        font-size: 2rem;
 
     }
+
+    .hamburger-button {
+        padding: 0;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    nav.show-menu .hamburger-button {
+        margin-block-start: 1em;
+    }
+
 }

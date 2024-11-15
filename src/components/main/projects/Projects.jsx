@@ -71,14 +71,14 @@ export default function Projects() {
                         </div>
                     </a>
                 </article> */}
-                <article className="card">
+{/*                 <article className="card">
                     <a href="https://duckumobile.vercel.app/" className="card-description">
                         <h3>Duck U (App E-commerce)</h3>
                         <div className="image-container same">
                             <img className="img-mobile" src={DuckUMobile} alt="Duck U Mobile" />
                         </div>
-                    </a>
-                </article>
+                    </a>image-container
+                </article> */}
                 {/* <article className="card-9">
                     <a href="https://playwiththedom.vercel.app/" className="card-description">
                         <h3>Play with the DOM</h3>

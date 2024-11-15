@@ -1,4 +1,4 @@
-.projects div{
+.projects div a{
     text-decoration-color: var(--first-font-color);
 }
 
@@ -61,19 +61,23 @@ h3 {
     overflow: hidden;
 } */
 
+.image-container {
+    overflow: hidden;
+}
+
 .image-container.same {
     grid-template-columns: 1fr 1fr 2fr;
 }
 
-.img-desktop{
+.img-desktop {
     width: clamp(20vw, 20rem, 25vw);
     width: 100%;
     transform: scale(1.01);
+    display: block;
 }
 
 .img-mobile{
-    width: clamp(7.5vw, 5rem, 15vw);
-    width: 100%;
+    width: clamp(7.5vw, 12rem, 15vw);
     transform: scale(1.01);
 }
 

@@ -125,21 +125,6 @@ video {
         align-items: center;    
     }
 
-    .header-banner{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .presentation-description {
-        /* width: 50%;
-        height: 15vh; */
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
     .presentation {
         font-size: 3rem;
         animation: focusText 2.5s ease forwards;
@@ -148,5 +133,13 @@ video {
     .description {
         font-size: 3rem;
         animation: focusText 3s ease forwards;
+    }
+
+    .presentation-description {
+        margin-block-start: 5dvh;
+    }
+
+    .arrow-link {
+        top: 70vh;
     }
 }
