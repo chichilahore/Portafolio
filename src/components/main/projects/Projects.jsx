@@ -14,7 +14,7 @@ export default function Projects() {
             <div id="ancla-2"><h2>Projects</h2></div>
             <div className="projects-content">
                 <article className="card">
-                    <a href="https://isaenespage.vercel.app/">
+                    <a href="https://isaenesart.vercel.app/">
                         <h3>Isa Enes</h3>
                         <div className="image-container">
                             <img className="img-desktop" src={IsaEnesDesktop} alt="Isa Enes Desktop" />

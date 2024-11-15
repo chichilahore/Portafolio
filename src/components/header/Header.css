@@ -21,7 +21,7 @@ section {
     margin-block-start: 2vh;
     background: var(--trans-background-color);
     position: absolute;
-    top: 80vh;
+    top: 66vh;
     mix-blend-mode: overlay;
 }
 

@@ -25,7 +25,7 @@ export default function Main() {
     }, []); // Empty array means this effect runs once on mount
 
     return (
-        <main>
+        <main id="ancla-1">
             <About />
             <Projects />
         </main>

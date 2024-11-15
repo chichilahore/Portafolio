@@ -9,20 +9,19 @@ footer {
 }
 
 footer>* {
-    margin-inline-end: 2em;
+    margin-inline-end: 5vw;
 }
 
 .contact-links {
     padding: 0;
-    width: 10vw;
-    margin: none;
+    margin-block-start: -1em;
 }
 
 .contact-icons img {
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease, filter 0.3s ease;
-    padding: 0.5em;
+    padding: .5em 2em .5em 0;
 }
 
 .contact-icons img:hover {
@@ -30,12 +29,10 @@ footer>* {
 }
 
 footer input.input-contact {
-    width: calc(100% - var(--body-margin) * 2);
     font-size: 1.25rem;
     margin-inline-end: 1em;
-    padding: .5em;
     background: transparent;
-    color: black;
+    color: white;
     border: 0;
     border-block-end: 2px solid white;
 }
@@ -49,9 +46,18 @@ footer input:focus {
 }
 
 button {
-    font-size: 1.2em;
-    padding: 0.5em 1em;
-    border-radius: 0.5em;
+    font-size: 1em;
+    padding: .25em .5em;
+    border-radius: .25em;
+    border: 0;
+}
+
+.contact-form {
+    margin-block-start: 1.5em;
+}
+
+.contact-form .input-button {
+    margin-block: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -68,6 +74,10 @@ button {
         margin-block-end: 1rem;
     }
 
+    footer input.input-contact {
+        width: calc(100% - var(--body-margin) * 2);
+    }
+
     .contact-links {
         width: 100%;
     }
@@ -76,10 +86,6 @@ button {
         display: flex;
         flex-direction: column;
         align-items: start;
-    }
-
-    .contact-form .input-button {
-        margin-block: 1rem;
     }
 
     .contact-form .input-button button {
