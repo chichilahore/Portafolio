@@ -1,10 +1,10 @@
 import './Projects.css';
 import FreepositoryDesktop from "../../../assets/freepositoryDesktop.png";
-import FrontifyDesktop from "../../../assets/FrontifyDesktop.png";
-import HabbitoMobile from "../../../assets/HabbitoMobile.png";
-import IsaEnesDesktop from "../../../assets/IsaEnesDesktop.png";
-import NasiriDesktop from "../../../assets/NasiriDesktop.png";
-import SoundwaveDesktop from "../../../assets/SoundwaveDesktop.png";
+import FrontifyDesktop from "../../../assets/frontifyDesktop.png";
+import HabbitoMobile from "../../../assets/habbitoMobile.png";
+import IsaEnesDesktop from "../../../assets/isaEnesDesktop.png";
+import NasiriDesktop from "../../../assets/nasiriDesktop.png";
+import SoundwaveDesktop from "../../../assets/soundwaveDesktop.png";
 
 
 export default function Projects() {
