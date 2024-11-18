@@ -5,7 +5,6 @@ import HabbitoMobile from "../../../assets/HabbitoMobile.png";
 import IsaEnesDesktop from "../../../assets/IsaEnesDesktop.png";
 import NasiriDesktop from "../../../assets/NasiriDesktop.png";
 import SoundwaveDesktop from "../../../assets/SoundwaveDesktop.png";
-import DuckUMobile from "../../../assets/DuckUMobile.png";
 
 
 export default function Projects() {
