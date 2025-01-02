@@ -5,7 +5,7 @@ import AnimationVideo from '../../assets/ani-isa.mp4';
 
 import { useState, useEffect } from 'react';
 
-const names = ['Alexandr', 'Chichizola', 'Chichi', 'Shurik'];
+const names = ['Alexandr', 'Chichi', 'Шурик'];
 
 function useRotatingNames(interval) {
     const [currentNameIndex, setCurrentNameIndex] = useState(0);
