@@ -53,11 +53,11 @@ video {
 
 @keyframes colors {
     0% {
-        filter: hue-rotate(115deg);
+        filter: hue-rotate(115deg) var(--filter);
     }
 
     100% {
-        filter: hue-rotate(475deg);
+        filter: hue-rotate(475deg) var(--filter);
 
     }
 }

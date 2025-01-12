@@ -13,6 +13,7 @@
     --third-color-article: rgba(255,255,255, .5);
     --body-margin: calc(12% - 4rem);
     --blur: blur(1.75em);
+    --filter: contrast(4) brightness(.6);
 }
 
 * {
