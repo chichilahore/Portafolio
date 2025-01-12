@@ -40,8 +40,7 @@
     }
 
     .about-description{
-        display: flex;
-        justify-content: row;
+        flex-direction: column;
     }
 
     .about div{
