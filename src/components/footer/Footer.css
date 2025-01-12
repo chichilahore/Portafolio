@@ -35,6 +35,7 @@ footer input.input-contact {
     color: white;
     border: 0;
     border-block-end: 2px solid white;
+    border-radius: 0;
 }
 
 footer input::placeholder {

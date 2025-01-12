@@ -39,6 +39,11 @@
         align-items: start;
     }
 
+    .about-description{
+        display: flex;
+        justify-content: row;
+    }
+
     .about div{
         display: flex;
         justify-content: start;
