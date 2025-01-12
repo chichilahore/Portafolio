@@ -7,8 +7,10 @@ import NasiriDesktop from "../../../assets/nasiriDesktop.png";
 import SoundwaveDesktop from "../../../assets/soundwaveDesktop.png";
 
 
+
+
 export default function Projects() {
-    return 
+    return (
         <div className="projects">
             <div id="ancla-2"><h2>Projects</h2></div>
             <div className="projects-content">
@@ -20,7 +22,6 @@ export default function Projects() {
                         </div>
                         <p className="tecnologies"> React, HTML, SASS, Figma, JSX, Trello </p>
                         <p className="functionality"> Different routes and carousel of images, showing the artist and her products</p>
-
                     </a>
                 </article>
                 <article className="card">
@@ -101,6 +102,5 @@ export default function Projects() {
                 </article> */}
             </div>
         </div>
-    
+    );
 }
-
