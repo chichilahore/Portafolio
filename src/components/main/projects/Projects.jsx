@@ -21,7 +21,7 @@ export default function Projects() {
                             <img className="img-desktop" src={IsaEnesDesktop} alt="Isa Enes Desktop" />
                         </div>
                         <p className="tecnologies"> React, HTML, SASS, Figma, JSX, Trello </p>
-                        <p className="functionality"> Different routes and carousel of images, showing the artist and her products</p>
+                        {/* <p className="functionality"> Different routes and carousel of images, showing the artist and her products</p> */}
                     </a>
                 </article>
                 <article className="card">
@@ -31,7 +31,7 @@ export default function Projects() {
                             <img className="img-desktop" src={NasiriDesktop} alt="Nasiri Music Desktop" />
                         </div>
                         <p className="tecnologies"> React, HTML, CSS, Adobe Ilustrator, Javascript</p>
-                        <p className="functionality"> React, HTML, CSS, Adobe Ilustrator</p>
+                        {/* <p className="functionality"> React, HTML, CSS, Adobe Ilustrator</p> */}
                     </a>
                 </article>
                 <article className="card">
@@ -41,7 +41,7 @@ export default function Projects() {
                             <img className="img-desktop" src={HabbitoMobile} alt="Rabbito Desktop" />
                         </div>
                         <p className="tecnologies"> React, HTML, CSS, Figma, Javascript, SCRUM</p>
-                        <p className="functionality"></p>
+                        {/* <p className="functionality"></p> */}
                     </a>
                 </article>
                 <article className="card">
@@ -51,7 +51,7 @@ export default function Projects() {
                             <img className="img-desktop" src={FreepositoryDesktop} alt="Freepository Desktop" />
                         </div>
                         <p className="tecnologies">Angular, C#, SQL, Typescript,SCRUM</p>
-                        <p className="functionality"></p>
+                        {/* <p className="functionality"></p> */}
                     </a>
                 </article>
                 <article className="card">
@@ -61,7 +61,7 @@ export default function Projects() {
                             <img className="img-desktop" src={FrontifyDesktop} alt="Frontify Desktop" />
                         </div>
                         <p className="tecnologies">Angular, HTML, SCSS, Typescript, HTML, SCRUM</p>
-                        <p className="functionality"></p>
+                        {/* <p className="functionality"></p> */}
                     </a>
                 </article>
                 <article className="card">
@@ -71,7 +71,7 @@ export default function Projects() {
                             <img className="img-desktop" src={SoundwaveDesktop} alt="Soundwave Desktop" />
                         </div>
                         <p className="tecnologies">Angular, SASS, Typescript, HTML, SCRUM</p>
-                        <p className="functionality"></p>
+                        {/* <p className="functionality"></p> */}
                     </a>
                 </article>
                 {/* <article className="card-7">

@@ -46,10 +46,15 @@ video {
     left: 0;
     right: 0;
     z-index: -1;
-    filter: hue-rotate(115deg);
+    filter: hue-rotate(115deg) ;
     animation: colors 10s ease;
     animation-iteration-count: infinite ;
 }
+
+:root {
+    --filter: blur(50px);
+}
+
 
 @keyframes colors {
     0% {
