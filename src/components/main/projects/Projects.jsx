@@ -54,16 +54,15 @@ export default function Projects() {
                         {/* <p className="functionality"></p> */}
                     </a>
                 </article>
-                <article className="card">
+                {/* <article className="card">
                     <a href="https://frontify-red.vercel.app/" className="card-description">
                         <h3>Frontity</h3>
                         <div className="image-container">
                             <img className="img-desktop" src={FrontifyDesktop} alt="Frontify Desktop" />
                         </div>
                         <p className="tecnologies">Angular, HTML, SCSS, Typescript, HTML, SCRUM</p>
-                        {/* <p className="functionality"></p> */}
                     </a>
-                </article>
+                </article> */}
                 <article className="card">
                     <a href="https://sound-wave-bay.vercel.app/" className="card-description">
                         <h3>Soundwave</h3>

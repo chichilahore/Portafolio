@@ -26,6 +26,10 @@
     scroll-behavior: smooth;
 }
 
+body    {
+    background-color: black
+}   
+
 h2 {
     letter-spacing: -.033em;
     font-weight: 700;
